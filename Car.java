@@ -4,7 +4,7 @@ class Car extends Vehicle {
     final String fuelType; // electric | boring | lpg
 
     public Car(String manufacturer, String name, int age, int maxSpeed, int passengerCount, boolean usable, int numOfWheels, String fuelType) {
-        super(manufacturer, name, age, maxSpeed, passangerCount, usable, "land");
+        super(manufacturer, name, age, maxSpeed, passengerCount, usable, "land");
         this.numOfWheels = numOfWheels;
         this.fuelType = fuelType;
     }
@@ -19,7 +19,7 @@ class Car extends Vehicle {
         return this.fuelType;
     }
 
-    public static void tune(int someValue) {
-        this.setMaxSpeed(maxSpeed * someValue)
+    public void tune(int someValue) {
+        this.setMaxSpeed(maxSpeed * someValue);
     }
 }

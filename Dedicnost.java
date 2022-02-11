@@ -8,7 +8,7 @@ class Dedicnost {
         Jet jet = new Jet("WolksVagen", "Sveg", 3, 999999, 2, true, 64);
     
         System.out.println("auto: " + car.getName());
-        System.out.println("lod: " boat.getName());
-        System.out.println("stihacka: " jet.getName());
+        System.out.println("lod: " + boat.getName());
+        System.out.println("stihacka: " + jet.getName());
     }
 }

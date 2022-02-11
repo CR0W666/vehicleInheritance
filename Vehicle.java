@@ -1,19 +1,19 @@
 class Vehicle {
 
-    String manufacturer
+    String manufacturer;
     String name;
     int age; //yrs
     int maxSpeed; //kmh
-    final int passangerCount;
+    final int passengerCount;
     boolean usable; 
     String type; // land | air | water
 
-    public Vehicle(String manufacturer, String name, int age, int maxSpeed, int passangerCount, boolean usable, String type) {
+    public Vehicle(String manufacturer, String name, int age, int maxSpeed, int passengerCount, boolean usable, String type) {
         this.manufacturer = manufacturer;
         this.name = name;
         this.age = age;
         this.maxSpeed = maxSpeed;
-        this.passangerCount = passangerCount;
+        this.passengerCount = passengerCount;
         this.usable = usable;
         this.type = type;
     }
@@ -44,7 +44,7 @@ class Vehicle {
     }
 
     public int getPassangerCount() {
-        return this.passangerCount;
+        return this.passengerCount;
     }
 
     public boolean isUsable() {
